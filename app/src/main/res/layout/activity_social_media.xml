@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".socialMediaActivity">
+
+    <ImageView
+        android:id="@+id/PostimageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/download" />
+
+    <Button
+        android:id="@+id/btnCreatePost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="create post" />
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="enter desc"
+        android:inputType="textPersonName"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/users_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
